@@ -8,7 +8,7 @@
 
 ### First Term 
 
-- Unit 1: Diploma Prerequisites :white_check_mark:
+- Unit 1: Diploma Prerequisites ![image](https://img.shields.io/badge/Done-green)
 - Unit 2: C Programming :white_check_mark:
 - Unit 3: Embedded C
 - Unit 4: System Architect
