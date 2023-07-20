@@ -6,7 +6,7 @@
 
 ## Contents
 
-### First Term 
+### First Term   ![image]( https://img.shields.io/badge/In_Progress-green)
 
 - Unit 1: Diploma Prerequisites :white_check_mark:
 - Unit 2: C Programming :white_check_mark:
