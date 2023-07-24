@@ -9,8 +9,8 @@ OBJ= $(SRC:.c=.o) $(As:.s=.o)
 NAME=Ehab_Lab2
 
 all: $(NAME).bin
+	$(CC)objdump.exe -D $(NAME).elf >> $(NAME).asm
 	@echo "****** Building is done *******"
-	
 $(NAME).bin: $(NAME).elf
 	$(CC)objcopy.exe -O binary $< $@
 

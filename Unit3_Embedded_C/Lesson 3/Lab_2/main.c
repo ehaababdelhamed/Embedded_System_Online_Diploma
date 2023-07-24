@@ -22,10 +22,11 @@ typedef union{
 	}pins;
 }ODR_t;
 
-ODR_t * PortA=(ODR_t *)(PortA_BASE+0x0C); 
+volatile ODR_t * PortA=(volatile ODR_t *)(PortA_BASE+0x0C); 
 
 int main(void)
 {
+	static uint32 bss_var[3];
 	uint32 i;
 	/*Enable clock for gpio port A*/
 	RCC_APB2ENR|=(1<<2);

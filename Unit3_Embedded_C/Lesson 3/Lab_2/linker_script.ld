@@ -3,6 +3,7 @@
  * Description: linker script for STM32F103C8T6 board
  * Author: Ehab Mohamed Abdelhamed
  *****************************************************/
+ 
  ENTRY(_reset)
  
  MEMORY
@@ -17,15 +18,25 @@
 	{
 		*(.vectors*)
 		*(.text*)
+		. = ALIGN(4);
+		_END_TEXT = .;
 	} > flash
 	
-	.bss :
+	.data :
 	{
+		_START_DATA = .;
 		*(.data);
-	} > flash
+		. = ALIGN(4);
+		_END_DATA = .;
+	}> sram AT> flash
 	
 	.bss :
 	{
+		_START_BSS = .;
 		*(.bss);
-	} > sram
+		. = ALIGN(4);
+		_END_BSS = .;
+		_STACK_TOP = . +0x1000 ;
+	}> sram
+	
  }

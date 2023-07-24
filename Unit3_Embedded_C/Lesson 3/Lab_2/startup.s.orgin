@@ -30,12 +30,14 @@
 .word Defualt_handler   //ECTI2_handler
 
 .section .text
-
+/*for thumb instruction*/
 .thumb_func
+
 /* jump to main */
 _reset:
-	bl main
-stop: b stop
+		bl main
+stop: 	b stop
 
+/*infinite loop when interrupt occur*/
 Defualt_handler :
 loop:	bl loop
