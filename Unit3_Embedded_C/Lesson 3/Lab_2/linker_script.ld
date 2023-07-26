@@ -36,7 +36,8 @@
 		*(.bss);
 		. = ALIGN(4);
 		_END_BSS = .;
-		_STACK_TOP = . +0x1000 ;
+		. = . + 0x1000 ;
+		_STACK_TOP = . ;
 	}> sram
 	
  }
