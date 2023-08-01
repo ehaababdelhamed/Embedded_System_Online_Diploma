@@ -10,7 +10,7 @@
 
 - Unit 1: Diploma Prerequisites :white_check_mark:
 - Unit 2: C Programming :white_check_mark:
-- Unit 3: Embedded C
+- Unit 3: Embedded C :white_check_mark:
 - Unit 4: System Architect
 - Unit 5: First Term Projects
 
