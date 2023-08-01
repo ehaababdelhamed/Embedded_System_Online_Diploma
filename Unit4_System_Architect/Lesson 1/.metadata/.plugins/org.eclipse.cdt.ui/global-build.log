@@ -1,0 +1,1945 @@
+??:??:?? **** Rebuild of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("UART_Buffer add : %d\n",i);
+                              ~^    ~
+                              %ld
+..\main.c:26:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("UART_Buffer add : %d\n",i);
+                              ~^    ~
+                              %ld
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:31: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("UART_Buffer add : %u\n",i);
+                              ~^    ~
+                              %lu
+..\main.c:26:31: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("UART_Buffer add : %u\n",i);
+                              ~^    ~
+                              %lu
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lifo_buffer.exe lifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:31:26: warning: pointer targets in passing argument 2 of 'LIFO_pop' differ in signedness [-Wpointer-sign]
+   if((LIFO_pop(&UART_buf,&data)) == LIFO_NO_ERROR){
+                          ^~~~~
+In file included from ..\main.c:8:
+..\lifo.h:43:13: note: expected 'uint32 *' {aka 'long unsigned int *'} but argument is of type 'sint32 *' {aka 'long int *'}
+ LIFO_Status LIFO_pop(LIFO_Buf_t* lifo_buf,uint32 *data);
+             ^~~~~~~~
+..\main.c:32:32: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+    printf("UART_Buffer get : %l\n",data);
+                                ^~
+..\main.c:32:11: warning: too many arguments for format [-Wformat-extra-args]
+    printf("UART_Buffer get : %l\n",data);
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c:32:32: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+    printf("UART_Buffer get : %l\n",data);
+                                ^~
+..\main.c:32:11: warning: too many arguments for format [-Wformat-extra-args]
+    printf("UART_Buffer get : %l\n",data);
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:32:32: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+    printf("UART_Buffer get : %l\n",data);
+                                ^~
+..\main.c:32:11: warning: too many arguments for format [-Wformat-extra-args]
+    printf("UART_Buffer get : %l\n",data);
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c:32:32: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+    printf("UART_Buffer get : %l\n",data);
+                                ^~
+..\main.c:32:11: warning: too many arguments for format [-Wformat-extra-args]
+    printf("UART_Buffer get : %l\n",data);
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:32:32: warning: format '%ls' expects argument of type 'wchar_t *', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("UART_Buffer get : %ls\n",data);
+                              ~~^    ~~~~
+                              %ld
+..\main.c:32:32: warning: format '%ls' expects argument of type 'wchar_t *', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("UART_Buffer get : %ls\n",data);
+                              ~~^    ~~~~
+                              %ld
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:32:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("UART_Buffer get : %d\n",data);
+                              ~^    ~~~~
+                              %ld
+..\main.c:32:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("UART_Buffer get : %d\n",data);
+                              ~^    ~~~~
+                              %ld
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lifo_buffer.exe lifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lifo_buffer.exe lifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Rebuild of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:16: warning: pointer targets in initialization of 'uint8 *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+  uint8 *string="Ehab Abdelhamed";
+                ^~~~~~~~~~~~~~~~~
+..\main.c:25:8: warning: implicit declaration of function 'FIFO_pop'; did you mean 'FIFO_H_'? [-Wimplicit-function-declaration]
+   for(;FIFO_pop(&UART_buf,&string[i]) == FIFO_NO_ERROR && string[i]!='\0';i++);
+        ^~~~~~~~
+        FIFO_H_
+..\main.c:19:13: warning: unused variable 'SPI_buf' [-Wunused-variable]
+  FIFO_Buf_t SPI_buf;
+             ^~~~~~~
+gcc -o Fifo_buffer.exe fifo.o main.o 
+main.o: In function `main':
+E:\Embedded_System_KS\WorkSpace\Unit4_System_Architect\Lesson 1\Fifo_buffer\Debug/../main.c:25: undefined reference to `FIFO_pop'
+E:\Embedded_System_KS\WorkSpace\Unit4_System_Architect\Lesson 1\Fifo_buffer\Debug/../main.c:26: undefined reference to `FIFO_pop'
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:16: warning: pointer targets in initialization of 'uint8 *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+  uint8 *string="Ehab Abdelhamed";
+                ^~~~~~~~~~~~~~~~~
+..\main.c:19:13: warning: unused variable 'SPI_buf' [-Wunused-variable]
+  FIFO_Buf_t SPI_buf;
+             ^~~~~~~
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Fifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Fifo_buffer.exe fifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Fifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Fifo_buffer.exe fifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:33:26: error: lvalue required as unary '&' operand
+  FIFO_add_item(&UART_buf,&'m');
+                          ^
+..\main.c:34:26: error: lvalue required as unary '&' operand
+  FIFO_add_item(&UART_buf,&'o');
+                          ^
+..\main.c:35:26: error: lvalue required as unary '&' operand
+  FIFO_add_item(&UART_buf,&'h');
+                          ^
+..\main.c:36:26: error: lvalue required as unary '&' operand
+  FIFO_add_item(&UART_buf,&'a');
+                          ^
+..\main.c:37:26: error: lvalue required as unary '&' operand
+  FIFO_add_item(&UART_buf,&'m');
+                          ^
+..\main.c:42:26: error: lvalue required as unary '&' operand
+  FIFO_add_item(&UART_buf,&'e');
+                          ^
+..\main.c:43:26: error: lvalue required as unary '&' operand
+  FIFO_add_item(&UART_buf,&'d');
+                          ^
+..\main.c:20:9: warning: unused variable 'i' [-Wunused-variable]
+  uint32 i=0;
+         ^
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:42:26: error: lvalue required as unary '&' operand
+  FIFO_add_item(&UART_buf,&('e'));
+                          ^
+..\main.c:43:26: error: lvalue required as unary '&' operand
+  FIFO_add_item(&UART_buf,&'d');
+                          ^
+..\main.c:20:9: warning: unused variable 'i' [-Wunused-variable]
+  uint32 i=0;
+         ^
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:20:9: warning: unused variable 'i' [-Wunused-variable]
+  uint32 i=0;
+         ^
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Fifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:20:9: warning: unused variable 'i' [-Wunused-variable]
+  uint32 i=0;
+         ^
+gcc -o Fifo_buffer.exe fifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Fifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c:97:13: error: conflicting types for 'FIFO_is_full'
+ FIFO_Status FIFO_is_full(const FIFO_Buf_t* fifo_buf){
+             ^~~~~~~~~~~~
+In file included from ..\fifo.c:7:
+..\fifo.h:60:13: note: previous declaration of 'FIFO_is_full' was here
+ FIFO_Status FIFO_is_full(FIFO_Buf_t* fifo_buf);
+             ^~~~~~~~~~~~
+..\fifo.c:112:6: error: conflicting types for 'FIFO_print'
+ void FIFO_print(const FIFO_Buf_t* fifo_buf){
+      ^~~~~~~~~~
+In file included from ..\fifo.c:7:
+..\fifo.h:63:6: note: previous declaration of 'FIFO_print' was here
+ void FIFO_print(FIFO_Buf_t* fifo_buf);
+      ^~~~~~~~~~
+..\fifo.c: In function 'FIFO_print':
+..\fifo.c:121:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("\n======== Fifo print ========\n");
+   ^~~~~~
+..\fifo.c:121:3: warning: incompatible implicit declaration of built-in function 'printf'
+..\fifo.c:121:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\fifo.c:8:1:
++#include <stdio.h>
+ 
+..\fifo.c:121:3:
+   printf("\n======== Fifo print ========\n");
+   ^~~~~~
+..\fifo.c:113:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  FIFO_Status status;
+              ^~~~~~
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c:97:13: error: conflicting types for 'FIFO_is_full'
+ FIFO_Status FIFO_is_full(const FIFO_Buf_t* fifo_buf){
+             ^~~~~~~~~~~~
+In file included from ..\fifo.c:7:
+..\fifo.h:60:13: note: previous declaration of 'FIFO_is_full' was here
+ FIFO_Status FIFO_is_full(FIFO_Buf_t* fifo_buf);
+             ^~~~~~~~~~~~
+..\fifo.c:112:6: error: conflicting types for 'FIFO_print'
+ void FIFO_print(const FIFO_Buf_t* fifo_buf){
+      ^~~~~~~~~~
+In file included from ..\fifo.c:7:
+..\fifo.h:63:6: note: previous declaration of 'FIFO_print' was here
+ void FIFO_print(FIFO_Buf_t* fifo_buf);
+      ^~~~~~~~~~
+..\fifo.c: In function 'FIFO_print':
+..\fifo.c:121:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("\n======== Fifo print ========\n");
+   ^~~~~~
+..\fifo.c:121:3: warning: incompatible implicit declaration of built-in function 'printf'
+..\fifo.c:121:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\fifo.c:8:1:
++#include <stdio.h>
+ 
+..\fifo.c:121:3:
+   printf("\n======== Fifo print ========\n");
+   ^~~~~~
+..\fifo.c:113:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  FIFO_Status status;
+              ^~~~~~
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+   printf("FIFO Enqueue (%x)\n");
+                         ~^
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:23:19: error: incompatible type for argument 1 of 'FIFO_enqueue'
+   if(FIFO_enqueue(UART_buf, i)== FIFO_NO_ERROR){
+                   ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:54:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_enqueue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n");
+                            ~^
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n");
+                            ~^
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:29:2: warning: implicit declaration of function 'FIFO_print_data'; did you mean 'FIFO_print'? [-Wimplicit-function-declaration]
+  FIFO_print_data(&UART_buf);
+  ^~~~~~~~~~~~~~~
+  FIFO_print
+..\main.c:30:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:35:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c: In function 'FIFO_print':
+..\fifo.c:121:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("\n======== Fifo print ========\n");
+   ^~~~~~
+..\fifo.c:121:3: warning: incompatible implicit declaration of built-in function 'printf'
+..\fifo.c:121:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\fifo.c:8:1:
++#include <stdio.h>
+ 
+..\fifo.c:121:3:
+   printf("\n======== Fifo print ========\n");
+   ^~~~~~
+..\fifo.c:113:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  FIFO_Status status;
+              ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+   printf("FIFO Enqueue (%x)\n");
+                         ~^
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:23:19: error: incompatible type for argument 1 of 'FIFO_enqueue'
+   if(FIFO_enqueue(UART_buf, i)== FIFO_NO_ERROR){
+                   ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:54:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_enqueue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n");
+                            ~^
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n");
+                            ~^
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:29:2: warning: implicit declaration of function 'FIFO_print_data'; did you mean 'FIFO_print'? [-Wimplicit-function-declaration]
+  FIFO_print_data(&UART_buf);
+  ^~~~~~~~~~~~~~~
+  FIFO_print
+..\main.c:30:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:35:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+   printf("FIFO Enqueue (%x)\n");
+                         ~^
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:23:19: error: incompatible type for argument 1 of 'FIFO_enqueue'
+   if(FIFO_enqueue(UART_buf, i)== FIFO_NO_ERROR){
+                   ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:54:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_enqueue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n");
+                            ~^
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n");
+                            ~^
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:29:2: warning: implicit declaration of function 'FIFO_print_data'; did you mean 'FIFO_print'? [-Wimplicit-function-declaration]
+  FIFO_print_data(&UART_buf);
+  ^~~~~~~~~~~~~~~
+  FIFO_print
+..\main.c:30:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:35:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+   printf("FIFO Enqueue (%x)\n");
+                         ~^
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:23:19: error: incompatible type for argument 1 of 'FIFO_enqueue'
+   if(FIFO_enqueue(UART_buf, i)== FIFO_NO_ERROR){
+                   ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:54:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_enqueue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n");
+                            ~^
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n");
+                            ~^
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:29:2: warning: implicit declaration of function 'FIFO_print_data'; did you mean 'FIFO_print'? [-Wimplicit-function-declaration]
+  FIFO_print_data(&UART_buf);
+  ^~~~~~~~~~~~~~~
+  FIFO_print
+..\main.c:30:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:35:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+   printf("FIFO Enqueue (%x)\n");
+                         ~^
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:23:19: error: incompatible type for argument 1 of 'FIFO_enqueue'
+   if(FIFO_enqueue(UART_buf, i)== FIFO_NO_ERROR){
+                   ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:54:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_enqueue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n");
+                            ~^
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n");
+                            ~^
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:29:2: warning: implicit declaration of function 'FIFO_print_data'; did you mean 'FIFO_print'? [-Wimplicit-function-declaration]
+  FIFO_print_data(&UART_buf);
+  ^~~~~~~~~~~~~~~
+  FIFO_print
+..\main.c:30:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:35:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+   printf("FIFO Enqueue (%x)\n");
+                         ~^
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:23:19: error: incompatible type for argument 1 of 'FIFO_enqueue'
+   if(FIFO_enqueue(UART_buf, i)== FIFO_NO_ERROR){
+                   ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:54:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_enqueue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n");
+                            ~^
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n");
+                            ~^
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:29:2: warning: implicit declaration of function 'FIFO_print_data'; did you mean 'FIFO_print'? [-Wimplicit-function-declaration]
+  FIFO_print_data(&UART_buf);
+  ^~~~~~~~~~~~~~~
+  FIFO_print
+..\main.c:30:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+..\main.c:35:18: error: incompatible type for argument 1 of 'FIFO_dequeue'
+  if(FIFO_dequeue(UART_buf,&data)== FIFO_NO_ERROR){
+                  ^~~~~~~~
+In file included from ..\main.c:9:
+..\fifo.h:57:38: note: expected 'FIFO_Buf_t *' {aka 'struct <anonymous> *'} but argument is of type 'FIFO_Buf_t' {aka 'struct <anonymous>'}
+ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
+                          ~~~~~~~~~~~~^~~~~~~~
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+   printf("FIFO Enqueue (%x)\n");
+                         ~^
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n");
+                            ~^
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n");
+                            ~^
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:29:2: warning: implicit declaration of function 'FIFO_print_data'; did you mean 'FIFO_print'? [-Wimplicit-function-declaration]
+  FIFO_print_data(&UART_buf);
+  ^~~~~~~~~~~~~~~
+  FIFO_print
+gcc -o Fifo_buffer.exe fifo.o main.o 
+main.o: In function `main':
+E:\Embedded_System_KS\WorkSpace\Unit4_System_Architect\Lesson 1\Fifo_buffer\Debug/../main.c:29: undefined reference to `FIFO_print_data'
+E:\Embedded_System_KS\WorkSpace\Unit4_System_Architect\Lesson 1\Fifo_buffer\Debug/../main.c:40: undefined reference to `FIFO_print_data'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+   printf("FIFO Enqueue (%x)\n");
+                         ~^
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n");
+                            ~^
+..\main.c:24:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n");
+                            ~^
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+   printf("FIFO Enqueue (%x)\n");
+                         ~^
+..\main.c:22:26: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+..\main.c:24:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n",i);
+                            ~^               ~
+                            %lx
+..\main.c:24:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n",i);
+                            ~^               ~
+                            %lx
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n,i");
+                            ~^
+..\main.c:26:29: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+   printf("FIFO Enqueue (%x)\n",i);
+                         ~^     ~
+                         %lx
+..\main.c:22:26: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+   printf("FIFO Enqueue (%x)\n",i);
+                         ~^     ~
+                         %lx
+..\main.c:24:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n",i);
+                            ~^               ~
+                            %lx
+..\main.c:24:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Done\n",i);
+                            ~^               ~
+                            %lx
+..\main.c:26:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n",i);
+                            ~^                 ~
+                            %lx
+..\main.c:26:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n",i);
+                            ~^                 ~
+                            %lx
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Fifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:26: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+   printf("FIFO Enqueue (%x)\n",i);
+                         ~^     ~
+                         %lx
+..\main.c:22:26: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+   printf("FIFO Enqueue (%x)\n",i);
+                         ~^     ~
+                         %lx
+..\main.c:26:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n",i);
+                            ~^                 ~
+                            %lx
+..\main.c:26:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("\tFIFO Enqueue (%x) ---- Failed\n",i);
+                            ~^                 ~
+                            %lx
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Fifo_buffer.exe fifo.o main.o 
+Info: Nothing to build for Lifo_buffer
+Info: Nothing to build for Fifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Fifo_buffer.exe fifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Fifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c: In function 'FIFO_print':
+..\fifo.c:132:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("\n======== FIFO print ========\n");
+   ^~~~~~
+..\fifo.c:132:3: warning: incompatible implicit declaration of built-in function 'printf'
+..\fifo.c:132:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\fifo.c:8:1:
++#include <stdio.h>
+ 
+..\fifo.c:132:3:
+   printf("\n======== FIFO print ========\n");
+   ^~~~~~
+..\fifo.c:122:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  FIFO_Status status;
+              ^~~~~~
+gcc -o Fifo_buffer.exe fifo.o main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Lifo_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lifo_buffer.exe lifo.o main.o 
+??:??:?? **** Rebuild of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:17:2: error: unknown type name 'Node'
+  Node* Next;
+  ^~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:17:2: error: unknown type name 'Node'
+  Node* Next;
+  ^~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:17:2: error: unknown type name 'Node'
+  Node* Next;
+  ^~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:8: error: expected ';' before 'struct'
+ Typedef struct{
+        ^~~~~~~
+        ;
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:8: error: expected ';' before 'struct'
+ Typedef struct{
+        ^~~~~~~
+        ;
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'FillDataOfStudent':
+..\main.c:34:17: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(newStudent->name);
+       ~~~~~~~~~~^~~~~~
+In file included from ..\main.c:7:
+C:/MinGW/x86_64-w64-mingw32/include/stdio.h:658:17: note: expected 'char *' but argument is of type 'char **'
+   char *__cdecl gets(char *_Buffer) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+                 ^~~~
+..\main.c:36:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(newStudent->id));
+         ~^  ~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:36:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(newStudent->id));
+         ~^  ~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c: In function 'GetStuedentFromId':
+..\main.c:49:13: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+   ReqStudent=ReqStudent->PNextStudent;
+             ^
+..\main.c: In function 'AddStudent':
+..\main.c:62:21: warning: passing argument 1 of 'FillDataOfStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   FillDataOfStudent(newStudent);
+                     ^~~~~~~~~~
+..\main.c:30:33: note: expected 'SData_t *' {aka 'struct <anonymous> *'} but argument is of type 'Sstudent_t *' {aka 'struct <anonymous> *'}
+ void FillDataOfStudent(SData_t* newStudent){
+                        ~~~~~~~~~^~~~~~~~~~
+..\main.c:73:15: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+    lastStudent=lastStudent->PNextStudent;
+               ^
+..\main.c:76:28: warning: assignment to 'struct Node *' from incompatible pointer type 'Sstudent_t *' {aka 'struct <anonymous> *'} [-Wincompatible-pointer-types]
+   lastStudent->PNextStudent=newStudent;
+                            ^
+..\main.c: In function 'deleteStudent':
+..\main.c:83:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:100:22: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+     g_PHeadofStudents=deleteStudent->PNextStudent;
+                      ^
+..\main.c:103:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:104:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:107:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct <anonymous>'} from type 'struct Node *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:118:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:121:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:124:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:127:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:128:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:130:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:133:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:155:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'FillDataOfStudent':
+..\main.c:36:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(newStudent->id));
+         ~^  ~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:36:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(newStudent->id));
+         ~^  ~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c: In function 'GetStuedentFromId':
+..\main.c:49:13: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+   ReqStudent=ReqStudent->PNextStudent;
+             ^
+..\main.c: In function 'AddStudent':
+..\main.c:62:21: warning: passing argument 1 of 'FillDataOfStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   FillDataOfStudent(newStudent);
+                     ^~~~~~~~~~
+..\main.c:30:33: note: expected 'SData_t *' {aka 'struct <anonymous> *'} but argument is of type 'Sstudent_t *' {aka 'struct <anonymous> *'}
+ void FillDataOfStudent(SData_t* newStudent){
+                        ~~~~~~~~~^~~~~~~~~~
+..\main.c:73:15: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+    lastStudent=lastStudent->PNextStudent;
+               ^
+..\main.c:76:28: warning: assignment to 'struct Node *' from incompatible pointer type 'Sstudent_t *' {aka 'struct <anonymous> *'} [-Wincompatible-pointer-types]
+   lastStudent->PNextStudent=newStudent;
+                            ^
+..\main.c: In function 'deleteStudent':
+..\main.c:83:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:100:22: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+     g_PHeadofStudents=deleteStudent->PNextStudent;
+                      ^
+..\main.c:103:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:104:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:107:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct <anonymous>'} from type 'struct Node *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:118:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:121:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:124:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:127:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:128:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:130:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:133:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:155:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'FillDataOfStudent':
+..\main.c:36:10: warning: format '%u' expects argument of type 'unsigned int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%u",&(newStudent->id));
+         ~^  ~~~~~~~~~~~~~~~~~
+         %lu
+..\main.c:36:10: warning: format '%u' expects argument of type 'unsigned int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%u",&(newStudent->id));
+         ~^  ~~~~~~~~~~~~~~~~~
+         %lu
+..\main.c: In function 'GetStuedentFromId':
+..\main.c:49:13: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+   ReqStudent=ReqStudent->PNextStudent;
+             ^
+..\main.c: In function 'AddStudent':
+..\main.c:62:21: warning: passing argument 1 of 'FillDataOfStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   FillDataOfStudent(newStudent);
+                     ^~~~~~~~~~
+..\main.c:30:33: note: expected 'SData_t *' {aka 'struct <anonymous> *'} but argument is of type 'Sstudent_t *' {aka 'struct <anonymous> *'}
+ void FillDataOfStudent(SData_t* newStudent){
+                        ~~~~~~~~~^~~~~~~~~~
+..\main.c:73:15: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+    lastStudent=lastStudent->PNextStudent;
+               ^
+..\main.c:76:28: warning: assignment to 'struct Node *' from incompatible pointer type 'Sstudent_t *' {aka 'struct <anonymous> *'} [-Wincompatible-pointer-types]
+   lastStudent->PNextStudent=newStudent;
+                            ^
+..\main.c: In function 'deleteStudent':
+..\main.c:83:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:100:22: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+     g_PHeadofStudents=deleteStudent->PNextStudent;
+                      ^
+..\main.c:103:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:104:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:107:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct <anonymous>'} from type 'struct Node *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:118:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:121:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:124:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:127:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:128:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:130:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:133:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:155:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'FillDataOfStudent':
+..\main.c:36:10: warning: format '%u' expects argument of type 'unsigned int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%u",&(newStudent->id));
+         ~^  ~~~~~~~~~~~~~~~~~
+         %lu
+..\main.c:36:10: warning: format '%u' expects argument of type 'unsigned int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%u",&(newStudent->id));
+         ~^  ~~~~~~~~~~~~~~~~~
+         %lu
+..\main.c: In function 'GetStuedentFromId':
+..\main.c:49:13: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+   ReqStudent=ReqStudent->PNextStudent;
+             ^
+..\main.c: In function 'AddStudent':
+..\main.c:62:21: warning: passing argument 1 of 'FillDataOfStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   FillDataOfStudent(newStudent);
+                     ^~~~~~~~~~
+..\main.c:30:33: note: expected 'SData_t *' {aka 'struct <anonymous> *'} but argument is of type 'Sstudent_t *' {aka 'struct <anonymous> *'}
+ void FillDataOfStudent(SData_t* newStudent){
+                        ~~~~~~~~~^~~~~~~~~~
+..\main.c:73:15: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+    lastStudent=lastStudent->PNextStudent;
+               ^
+..\main.c:76:28: warning: assignment to 'struct Node *' from incompatible pointer type 'Sstudent_t *' {aka 'struct <anonymous> *'} [-Wincompatible-pointer-types]
+   lastStudent->PNextStudent=newStudent;
+                            ^
+..\main.c: In function 'deleteStudent':
+..\main.c:83:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:100:22: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+     g_PHeadofStudents=deleteStudent->PNextStudent;
+                      ^
+..\main.c:103:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:104:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:107:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct <anonymous>'} from type 'struct Node *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:118:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:121:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:124:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:127:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:128:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:130:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:133:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:155:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'GetStuedentFromId':
+..\main.c:49:13: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+   ReqStudent=ReqStudent->PNextStudent;
+             ^
+..\main.c: In function 'AddStudent':
+..\main.c:62:21: warning: passing argument 1 of 'FillDataOfStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   FillDataOfStudent(newStudent);
+                     ^~~~~~~~~~
+..\main.c:30:33: note: expected 'SData_t *' {aka 'struct <anonymous> *'} but argument is of type 'Sstudent_t *' {aka 'struct <anonymous> *'}
+ void FillDataOfStudent(SData_t* newStudent){
+                        ~~~~~~~~~^~~~~~~~~~
+..\main.c:73:15: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+    lastStudent=lastStudent->PNextStudent;
+               ^
+..\main.c:76:28: warning: assignment to 'struct Node *' from incompatible pointer type 'Sstudent_t *' {aka 'struct <anonymous> *'} [-Wincompatible-pointer-types]
+   lastStudent->PNextStudent=newStudent;
+                            ^
+..\main.c: In function 'deleteStudent':
+..\main.c:83:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:100:22: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Node *' [-Wincompatible-pointer-types]
+     g_PHeadofStudents=deleteStudent->PNextStudent;
+                      ^
+..\main.c:103:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:104:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:107:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct <anonymous>'} from type 'struct Node *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:118:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:121:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:124:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:127:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:128:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:130:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:133:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:155:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'GetStuedentFromId':
+..\main.c:49:13: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Sstudent_t *' [-Wincompatible-pointer-types]
+   ReqStudent=ReqStudent->PNextStudent;
+             ^
+..\main.c: In function 'AddStudent':
+..\main.c:62:21: warning: passing argument 1 of 'FillDataOfStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   FillDataOfStudent(newStudent);
+                     ^~~~~~~~~~
+..\main.c:30:33: note: expected 'SData_t *' {aka 'struct <anonymous> *'} but argument is of type 'Sstudent_t *' {aka 'struct <anonymous> *'}
+ void FillDataOfStudent(SData_t* newStudent){
+                        ~~~~~~~~~^~~~~~~~~~
+..\main.c:73:15: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Sstudent_t *' [-Wincompatible-pointer-types]
+    lastStudent=lastStudent->PNextStudent;
+               ^
+..\main.c:76:28: warning: assignment to 'struct Sstudent_t *' from incompatible pointer type 'Sstudent_t *' {aka 'struct <anonymous> *'} [-Wincompatible-pointer-types]
+   lastStudent->PNextStudent=newStudent;
+                            ^
+..\main.c: In function 'deleteStudent':
+..\main.c:83:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:100:22: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Sstudent_t *' [-Wincompatible-pointer-types]
+     g_PHeadofStudents=deleteStudent->PNextStudent;
+                      ^
+..\main.c:103:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:104:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:107:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct <anonymous>'} from type 'struct Sstudent_t *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:118:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:121:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:124:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:127:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:128:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:130:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:133:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:155:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'GetStuedentFromId':
+..\main.c:49:13: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Sstudent_t *' [-Wincompatible-pointer-types]
+   ReqStudent=ReqStudent->PNextStudent;
+             ^
+..\main.c: In function 'AddStudent':
+..\main.c:62:21: warning: passing argument 1 of 'FillDataOfStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   FillDataOfStudent(newStudent);
+                     ^~~~~~~~~~
+..\main.c:30:33: note: expected 'SData_t *' {aka 'struct <anonymous> *'} but argument is of type 'Sstudent_t *' {aka 'struct <anonymous> *'}
+ void FillDataOfStudent(SData_t* newStudent){
+                        ~~~~~~~~~^~~~~~~~~~
+..\main.c:73:15: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Sstudent_t *' [-Wincompatible-pointer-types]
+    lastStudent=lastStudent->PNextStudent;
+               ^
+..\main.c:76:28: warning: assignment to 'struct Sstudent_t *' from incompatible pointer type 'Sstudent_t *' {aka 'struct <anonymous> *'} [-Wincompatible-pointer-types]
+   lastStudent->PNextStudent=newStudent;
+                            ^
+..\main.c: In function 'deleteStudent':
+..\main.c:83:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:87:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:100:22: warning: assignment to 'Sstudent_t *' {aka 'struct <anonymous> *'} from incompatible pointer type 'struct Sstudent_t *' [-Wincompatible-pointer-types]
+     g_PHeadofStudents=deleteStudent->PNextStudent;
+                      ^
+..\main.c:103:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:104:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:107:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct <anonymous>'} from type 'struct Sstudent_t *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:118:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:121:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:124:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct <anonymous>'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:126:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:127:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:128:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:130:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct <anonymous>'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:133:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:155:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:21:1: warning: useless storage class specifier in empty declaration
+ };
+ ^
+..\main.c: In function 'AddStudent':
+..\main.c:64:21: warning: passing argument 1 of 'FillDataOfStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   FillDataOfStudent(newStudent);
+                     ^~~~~~~~~~
+..\main.c:32:33: note: expected 'SData_t *' {aka 'struct <anonymous> *'} but argument is of type 'Sstudent_t *' {aka 'struct Sstudent *'}
+ void FillDataOfStudent(SData_t* newStudent){
+                        ~~~~~~~~~^~~~~~~~~~
+..\main.c: In function 'deleteStudent':
+..\main.c:85:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:89:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:89:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:105:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:106:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:109:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct Sstudent'} from type 'struct Sstudent *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:120:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:123:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:126:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:130:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:131:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:132:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:135:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'AddStudent':
+..\main.c:64:21: warning: passing argument 1 of 'FillDataOfStudent' from incompatible pointer type [-Wincompatible-pointer-types]
+   FillDataOfStudent(newStudent);
+                     ^~~~~~~~~~
+..\main.c:32:33: note: expected 'SData_t *' {aka 'struct <anonymous> *'} but argument is of type 'Sstudent_t *' {aka 'struct Sstudent *'}
+ void FillDataOfStudent(SData_t* newStudent){
+                        ~~~~~~~~~^~~~~~~~~~
+..\main.c: In function 'deleteStudent':
+..\main.c:85:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:89:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:89:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:105:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:106:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:109:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct Sstudent'} from type 'struct Sstudent *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:120:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:123:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:126:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:130:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:131:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:132:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:135:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'deleteStudent':
+..\main.c:85:30: error: invalid initializer
+  Sstudent_t previousStudents=g_PHeadofStudents;
+                              ^~~~~~~~~~~~~~~~~
+..\main.c:89:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:89:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:105:27: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+     while(previousStudents->PNextStudent!=deleteStudent){
+                           ^~
+..\main.c:106:39: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+      previousStudents=previousStudents->PNextStudent;
+                                       ^~
+..\main.c:109:21: error: incompatible types when assigning to type 'Sstudent_t' {aka 'struct Sstudent'} from type 'struct Sstudent *'
+     previousStudents=deleteStudent->PNextStudent;
+                     ^
+..\main.c: In function 'Print_Students':
+..\main.c:120:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:123:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:126:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:130:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:131:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:132:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:135:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'deleteStudent':
+..\main.c:89:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c:89:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint32 *' {aka 'long unsigned int *'} [-Wformat=]
+  scanf("%d",&(deleteStudentid));
+         ~^  ~~~~~~~~~~~~~~~~~~
+         %ld
+..\main.c: In function 'Print_Students':
+..\main.c:120:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:123:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:126:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:130:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:131:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:132:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:135:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Print_Students':
+..\main.c:120:21: error: invalid initializer
+  Sstudent_t student=g_PHeadofStudents;
+                     ^~~~~~~~~~~~~~~~~
+..\main.c:123:12: error: invalid operands to binary == (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+  if(student==NULL){
+            ^~
+..\main.c:126:16: error: invalid operands to binary != (have 'Sstudent_t' {aka 'struct Sstudent'} and 'void *')
+   while(student!=NULL){
+                ^~
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:129:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Name  : %s\n",student->student.name);
+                                 ^~
+..\main.c:130:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("ID    : %d\n",student->student.id);
+                                 ^~
+..\main.c:131:33: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    printf("Height: %f\n",student->student.height);
+                                 ^~
+..\main.c:132:19: error: invalid type argument of '->' (have 'Sstudent_t' {aka 'struct Sstudent'})
+    student=student->PNextStudent;
+                   ^~
+..\main.c:135:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Print_Students':
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:128:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("The student record %d :\n",count);
+                               ~^      ~~~~~
+                               %ld
+..\main.c:130:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("ID    : %d\n",student->student.id);
+                    ~^    ~~~~~~~~~~~~~~~~~~~
+                    %ld
+..\main.c:130:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32' {aka 'long unsigned int'} [-Wformat=]
+    printf("ID    : %d\n",student->student.id);
+                    ~^    ~~~~~~~~~~~~~~~~~~~
+                    %ld
+..\main.c:135:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Print_Students':
+..\main.c:135:9: warning: unknown escape sequence: '\='
+  printf("\====================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default:
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:157:3: error: label at end of compound statement
+   default :
+   ^~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+Info: Nothing to build for Student_Database
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -o Student_Database.exe main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Print_Students':
+..\main.c:122:9: warning: unknown escape sequence: '\='
+  printf("\n\========================================\n");
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -o Student_Database.exe main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -o Student_Database.exe main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:172:13: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'eOptions_t *' {aka 'enum <anonymous> *'} [-Wformat=]
+     scanf("%d",&option);
+            ~^  ~~~~~~~
+..\main.c:172:13: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'eOptions_t *' {aka 'enum <anonymous> *'} [-Wformat=]
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:172:13: warning: format '%e' expects argument of type 'float *', but argument 2 has type 'eOptions_t *' {aka 'enum <anonymous> *'} [-Wformat=]
+     scanf("%e",&option);
+            ~^  ~~~~~~~
+..\main.c:172:13: warning: format '%e' expects argument of type 'float *', but argument 2 has type 'eOptions_t *' {aka 'enum <anonymous> *'} [-Wformat=]
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:172:14: warning: format '%lu' expects argument of type 'long unsigned int *', but argument 2 has type 'eOptions_t *' {aka 'enum <anonymous> *'} [-Wformat=]
+     scanf("%lu",&option);
+            ~~^  ~~~~~~~
+..\main.c:172:14: warning: format '%lu' expects argument of type 'long unsigned int *', but argument 2 has type 'eOptions_t *' {aka 'enum <anonymous> *'} [-Wformat=]
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+Info: Nothing to build for Student_Database
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -o Student_Database.exe main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+Info: Nothing to build for Student_Database
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -o Student_Database.exe main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+Info: Nothing to build for Student_Database
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -o Student_Database.exe main.o 
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+Info: Nothing to build for Student_Database
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:28:19: error: 'RINT_OPTIONS' undeclared (first use in this function); did you mean 'PRINT_OPTIONS'?
+ #define MINOPTION RINT_OPTIONS
+                   ^~~~~~~~~~~~
+..\main.c:174:15: note: in expansion of macro 'MINOPTION'
+     if(option<MINOPTION || option>MAXOPTION){
+               ^~~~~~~~~
+..\main.c:28:19: note: each undeclared identifier is reported only once for each function it appears in
+ #define MINOPTION RINT_OPTIONS
+                   ^~~~~~~~~~~~
+..\main.c:174:15: note: in expansion of macro 'MINOPTION'
+     if(option<MINOPTION || option>MAXOPTION){
+               ^~~~~~~~~
+Info: Nothing to build for Fifo_buffer
+Info: Nothing to build for Lifo_buffer
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Student_Database.exe main.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Student_Database.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -o Student_Database.exe main.o 

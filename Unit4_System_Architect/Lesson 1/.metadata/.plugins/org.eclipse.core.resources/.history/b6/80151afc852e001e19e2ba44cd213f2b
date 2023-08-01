@@ -1,0 +1,15 @@
+ /******************************************************************************
+ * Module: LIFO
+ * File Name: lifo.c
+ * Description: Headar file for LIFO Data structure
+ * Author: Ehab Mohamed Abdelhamed
+ ******************************************************************************/
+
+#ifndef LIFO_H_
+#define LIFO_H_
+#include "Platform_Types.h"
+#include <stdlib.h>
+
+
+
+#endif /* LIFO_H_ */

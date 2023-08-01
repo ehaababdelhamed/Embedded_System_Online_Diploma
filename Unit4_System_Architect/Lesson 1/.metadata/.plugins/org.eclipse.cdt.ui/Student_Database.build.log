@@ -1,0 +1,6 @@
+??:??:?? **** Incremental Build of configuration Debug for project Student_Database ****
+Info: Internal Builder is used for build
+gcc -o Student_Database.exe main.o 
+
+??:??:?? Build Finished. 0 errors, 0 warnings. (took 452ms)
+

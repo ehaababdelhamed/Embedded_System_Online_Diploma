@@ -1,0 +1,32 @@
+/******************************************************************************
+ * File Name: main.c
+ * Description: Application for using FIFO data structure
+ * Author: Ehab Mohamed Abdelhamed
+ ******************************************************************************/
+#include "Platform_Types.h"
+#include <stdio.h>
+#include <string.h>
+#include "fifo.h"
+
+#define BUFFER_1_SIZE	7
+
+ELEMENT_TYPE buffer1[BUFFER_1_SIZE];
+
+/* Main Function */
+int main(void){
+	ELEMENT_TYPE data=0;
+	FIFO_Buf_t UART_buf;
+	FIFO_Buf_t SPI_buf;
+	FIFO_init(&UART_buf, buffer1,  BUFFER_1_SIZE);
+	uint32 i=0;
+	uint8 *string="Ehab Abdelhamed";
+	printf("UART_Fifo_Buffer get : ");
+	while(string[i]!='\0')
+	for(;FIFO_pop(&UART_buf,&string[i]) == FIFO_NO_ERROR;i++);
+	while(FIFO_pop(&UART_buf,&data) == FIFO_NO_ERROR){
+			printf("%c\n",data);
+	}
+}
+
+	return 0;
+}

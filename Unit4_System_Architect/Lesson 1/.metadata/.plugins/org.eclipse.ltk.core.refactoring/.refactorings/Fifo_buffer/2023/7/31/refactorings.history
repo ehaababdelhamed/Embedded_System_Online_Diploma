@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Fifo_buffer/lifo.c&apos; to &apos;fifo.c&apos;" description="Rename resource &apos;lifo.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="lifo.c" name="fifo.c" stamp="1690691658598" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Fifo_buffer/lifo.h&apos; to &apos;fifo.h&apos;" description="Rename resource &apos;lifo.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="lifo.h" name="fifo.h" stamp="1690691663601" updateReferences="true"/>
+</session>
