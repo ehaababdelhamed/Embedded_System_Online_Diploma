@@ -5,6 +5,7 @@
  * Author: Ehab Mohamed Abdelhamed
  ******************************************************************************/
 #include "fifo.h"
+#include <stdio.h>
 
 /*******************************************************************************
  *                      Function Definition                                    *
@@ -118,7 +119,7 @@ FIFO_Status FIFO_is_full(const FIFO_Buf_t* fifo_buf){
  * Return value: None
  * Description: Function to print all data buffer.
  ************************************************************************************/
-void FIFO_print(const FIFO_Buf_t* fifo_buf){
+FIFO_Status FIFO_print(const FIFO_Buf_t* fifo_buf){
 	FIFO_Status status;
 	ELEMENT_TYPE *Ptemp;
 	uint32 i;
@@ -136,5 +137,6 @@ void FIFO_print(const FIFO_Buf_t* fifo_buf){
 		}
 		printf("============================\n");
 	}
+	return status;
 }
 

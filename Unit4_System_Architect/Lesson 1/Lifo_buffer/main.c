@@ -6,6 +6,8 @@
 #include "Platform_Types.h"
 #include "lifo.h"
 #include <stdio.h>
+#include <stdio.h>
+
 
 #define BUFFER_1_SIZE	5
 #define BUFFER_2_SIZE	5

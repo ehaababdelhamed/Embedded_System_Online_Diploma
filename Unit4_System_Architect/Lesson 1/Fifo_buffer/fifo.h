@@ -8,7 +8,6 @@
 #ifndef FIFO_H_
 #define FIFO_H_
 #include "Platform_Types.h"
-#include <stdlib.h>
 /*******************************************************************************
  *                             User Configuration                              *
  *******************************************************************************/
@@ -60,7 +59,7 @@ FIFO_Status FIFO_dequeue(FIFO_Buf_t* fifo_buf,ELEMENT_TYPE *data);
 FIFO_Status FIFO_is_full(const FIFO_Buf_t* fifo_buf);
 
 /* Function to print all data buffer */
-void FIFO_print(const FIFO_Buf_t* fifo_buf);
+FIFO_Status FIFO_print(const FIFO_Buf_t* fifo_buf);
 
 
 
