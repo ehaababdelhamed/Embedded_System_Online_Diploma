@@ -1,6 +1,6 @@
 /******************************************************************************
  * File Name: main.c
- * Description: Student database appliaction
+ * Description: Main Application for student data base using linked list
  * Author: Ehab Mohamed Abdelhamed
  ******************************************************************************/
 #include "student_database.h"
@@ -8,9 +8,11 @@
 
 /* Main Function */
 int main(void){
+	/******************* Initialization *****************************/
 	//To solve input/output buffer bug in eclipse
 	setbuf(stdout,NULL);
-	eOptions_t option=PRINT_OPTIONS;
+	eOptions_t option=PRINT_OPTIONS; //For select option
+	/********************* Super Loop********************************/
 	while(1){
 		switch(option){
 		case PRINT_OPTIONS:
@@ -33,6 +35,26 @@ int main(void){
 			Delete_allStudents();
 			option=PRINT_OPTIONS;
 			break;
+		case GET_Nth_RECORD:
+			Get_Nth_Record();
+			option=PRINT_OPTIONS;
+			break;
+		case GET_Nth_RECORD_FROM_END:
+			Get_Nth_Record_FromEnd();
+			option=PRINT_OPTIONS;
+			break;
+		case GET_MIDDLE_RECORD:
+			Get_Middle_Record();
+			option=PRINT_OPTIONS;
+			break;
+		case NUM_OF_StUDENTS:
+			Num_Of_Students();
+			option=PRINT_OPTIONS;
+			break;
+		case REVERSE_RECORDS:
+			Reverse_Records();
+			option=PRINT_OPTIONS;
+			break;
 		default:
 			printf("WRONG OPTION!\n");
 			option=PRINT_OPTIONS;
@@ -40,3 +62,4 @@ int main(void){
 	}
 	return 0;
 }
+

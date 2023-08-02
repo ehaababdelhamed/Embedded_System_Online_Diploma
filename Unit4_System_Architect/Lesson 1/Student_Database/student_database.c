@@ -15,11 +15,11 @@ Sstudent_t* g_pHeadofStudents=NULL;
  *******************************************************************************/
 
 /************************************************************************************
-* Function Name: Add_Student;
-* Parameters (in):	None
-* Return value: None
-* Description: Function to add student in the list
-************************************************************************************/
+ * Function Name: Add_Student;
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to add student in the list
+ ************************************************************************************/
 void Add_Student(){
 	//Create New record
 	Sstudent_t* pNewStudent=(Sstudent_t*)malloc(sizeof(Sstudent_t));
@@ -46,11 +46,11 @@ void Add_Student(){
 }
 
 /************************************************************************************
-* Function Name: Delete_Student;
-* Parameters (in):	None
-* Return value: None
-* Description: Function to delete student from the list
-************************************************************************************/
+ * Function Name: Delete_Student;
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to delete student from the list
+ ************************************************************************************/
 void Delete_Student(){
 	uint32 deleteStudentid=0;
 	Sstudent_t* pDeleteStudent=NULL;
@@ -89,11 +89,11 @@ void Delete_Student(){
 }
 
 /************************************************************************************
-* Function Name: Print_Students;
-* Parameters (in):	None
-* Return value: None
-* Description: Function to display all students in the list
-************************************************************************************/
+ * Function Name: Print_Students;
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to display all students in the list
+ ************************************************************************************/
 void Print_Students(){
 	Sstudent_t* pStudent=g_pHeadofStudents;
 	uint32 count=0;
@@ -107,7 +107,7 @@ void Print_Students(){
 			printf("Record number %lu :\n",count);
 			printf("Name  : %s\n",pStudent->student.name);
 			printf("ID    : %lu\n",pStudent->student.id);
-			printf("Height: %f\n",pStudent->student.height);
+			printf("Height: %0.2f cm\n",pStudent->student.height);
 			pStudent=pStudent->PNextStudent;
 		}
 	}
@@ -115,11 +115,11 @@ void Print_Students(){
 }
 
 /************************************************************************************
-* Function Name: Delete_allStudents;
-* Parameters (in):	None
-* Return value: None
-* Description: Function to delete all students in the list
-************************************************************************************/
+ * Function Name: Delete_allStudents;
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to delete all students in the list
+ ************************************************************************************/
 void Delete_allStudents(){
 	Sstudent_t* pCurrentStudent=g_pHeadofStudents;
 	Sstudent_t* pPerviousStudent=NULL;
@@ -136,11 +136,11 @@ void Delete_allStudents(){
 }
 
 /************************************************************************************
-* Function Name: Print_Options;
-* Parameters (in):	None
-* Return value: None
-* Description: Function to display all option in application
-************************************************************************************/
+ * Function Name: Print_Options;
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to display all option in application
+ ************************************************************************************/
 void Print_Options(){
 	printf("===================================\n");
 	printf("\tChoose one of the following option\n");
@@ -148,15 +148,22 @@ void Print_Options(){
 	printf(" 2: Delete student\n");
 	printf(" 3: Print students\n");
 	printf(" 4: Delete all students\n");
+	printf(" 5: Get Nth record\n");
+	printf(" 6: Get Nth record from the end\n");
+	printf(" 7: Get Middle record\n");
+	printf(" 8: Number of students\n");
+	printf(" 9: Reverse records\n");
+
+
 	printf("Enter Option Number: ");
 }
 
 /************************************************************************************
-* Function Name: FillDataOfStudent;
-* Parameters (in):	pNewStudent - pointer to structure of student data that will be filled
-* Return value: None
-* Description: Function to fill data of student (name - id - height)
-************************************************************************************/
+ * Function Name: FillDataOfStudent;
+ * Parameters (in):	pNewStudent - pointer to structure of student data that will be filled
+ * Return value: None
+ * Description: Function to fill data of student (name - id - height)
+ ************************************************************************************/
 void FillDataOfStudent(SData_t* pNewStudent){
 	//Get all information of student
 	printf("===== Enter information of student =====\n");
@@ -171,11 +178,11 @@ void FillDataOfStudent(SData_t* pNewStudent){
 }
 
 /************************************************************************************
-* Function Name: GetStuedentFromId
-* Parameters (in):	ID - ID number of student
-* Return value: return address of required student
-* Description: Function to search for student by its ID
-************************************************************************************/
+ * Function Name: GetStuedentFromId
+ * Parameters (in):	ID - ID number of student
+ * Return value: return address of required student
+ * Description: Function to search for student by its ID
+ ************************************************************************************/
 Sstudent_t* GetStuedentFromId(uint32 ID){
 	Sstudent_t* pReqStudent=g_pHeadofStudents;
 	//loop until reach to the required ID
@@ -187,4 +194,148 @@ Sstudent_t* GetStuedentFromId(uint32 ID){
 	}
 	//if ID not exist return NULL
 	return pReqStudent;
+}
+
+/************************************************************************************
+ * Function Name: Get_Nth_Record
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to find student by record number
+ ************************************************************************************/
+
+void Get_Nth_Record(){
+	uint32 index;
+	Sstudent_t* pNthStudent=g_pHeadofStudents;
+	//Get the required record number
+	printf("Enter The record number of student: ");
+	scanf("%lu",&index);
+	//loop by count equal to record number
+	while(--index){
+		//if the list is ended or empty break the loop
+		if(pNthStudent==NULL){
+			break;
+		}
+		pNthStudent=pNthStudent->PNextStudent;
+	}
+	//if the pointer don't equal NULL print the information of required student
+	if(pNthStudent==NULL){
+		printf("The record number not exist\n");
+	}else{
+		printf("Name  : %s\n",pNthStudent->student.name);
+		printf("ID    : %lu\n",pNthStudent->student.id);
+		printf("Height: %0.2f cm\n",pNthStudent->student.height);
+	}
+	printf("========================================\n");
+}
+
+/************************************************************************************
+ * Function Name: Num_Of_Students
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to count the number of students in the list
+ ************************************************************************************/
+void Num_Of_Students(){
+	uint32 count=0;;
+	Sstudent_t* pStudent=g_pHeadofStudents;
+	//Loop and count the number of records
+	while(pStudent){
+		count++;
+		pStudent=pStudent->PNextStudent;
+	}
+	printf("========================================\n");
+	printf("Number of exist students: %lu \n",count);
+	printf("========================================\n");
+}
+
+/************************************************************************************
+ * Function Name: Get_Nth_Record
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to find n'th record from the end
+ ************************************************************************************/
+void Get_Nth_Record_FromEnd(){
+	uint32 index,num;
+	Sstudent_t* pMain=g_pHeadofStudents;
+	Sstudent_t* pRef=g_pHeadofStudents;
+	//Get the required record number
+	printf("Enter The n'th record of student from the end: ");
+	scanf("%lu",&index);
+	num=index;
+	//loop by count equal to record number
+	while(index){
+		//if the list is ended or empty break the loop
+		if(pRef==NULL){
+			break;
+		}
+		pRef=pRef->PNextStudent;
+		index--;
+	}
+	//if index not equal zero mean the index number larger than the list length
+	if(index!=0){
+		printf("The record number not exist\n");
+	}else{
+		//if index equal zero the pRef is in the n'th node form start and pMain at start
+		//We move two pointers by one step until pRef reach to NULL at this the pMain refer to the the n'th node form end
+		while(pRef){
+			pRef=pRef->PNextStudent;
+			pMain=pMain->PNextStudent;
+		}
+		printf("The %lu'th record form the end: \n",num);
+		printf("Name  : %s\n",pMain->student.name);
+		printf("ID    : %lu\n",pMain->student.id);
+		printf("Height: %0.2f cm\n",pMain->student.height);
+	}
+	printf("========================================\n");
+}
+
+/************************************************************************************
+ * Function Name: Get_Middle_Record
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to find the middle record
+ ************************************************************************************/
+void Get_Middle_Record(){
+	Sstudent_t* pSlow=g_pHeadofStudents;
+	Sstudent_t* pFast=g_pHeadofStudents;
+	printf("\n============ Middle Student ============\n");
+	if(g_pHeadofStudents == NULL){
+		printf("The List is Empty\n");
+	}else{
+		//loop until reach ro the middle record
+		//by move pSlow by one step and pFast by two step
+		//add check for pSlow->next to avoid crash at one or two nodes only
+		while(pSlow->PNextStudent!=NULL&&pFast->PNextStudent!=NULL){
+			pSlow=pSlow->PNextStudent;
+			pFast=pFast->PNextStudent->PNextStudent;
+		}
+		printf("Name  : %s\n",pSlow->student.name);
+		printf("ID    : %lu\n",pSlow->student.id);
+		printf("Height: %0.2f cm\n",pSlow->student.height);
+	}
+	printf("========================================\n");
+}
+
+/************************************************************************************
+ * Function Name: Reverse_Records
+ * Parameters (in):	None
+ * Return value: None
+ * Description: Function to reverse records in the list
+ ************************************************************************************/
+void Reverse_Records(){
+	Sstudent_t* pCurrent=g_pHeadofStudents;
+	Sstudent_t* pNext=NULL;
+	Sstudent_t* pPrev=NULL;
+	if(g_pHeadofStudents == NULL){
+		printf("The List is Empty\n");
+	}else{
+		while(pCurrent!=NULL){
+			pNext=pCurrent->PNextStudent;
+			pCurrent->PNextStudent=pPrev;
+			pPrev=pCurrent;
+			pCurrent=pNext;
+		}
+		g_pHeadofStudents=pPrev;
+		printf("Reverse Records ------ done\n");
+	}
+	printf("========================================\n");
 }

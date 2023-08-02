@@ -20,7 +20,7 @@ typedef struct{
 	float32 height;
 }SData_t;
 
-//Structure for record
+//Structure for records in the list
 struct Sstudent{
 	SData_t student;
 	struct Sstudent* PNextStudent;
@@ -28,14 +28,10 @@ struct Sstudent{
 typedef struct Sstudent Sstudent_t;
 
 typedef enum {
-	PRINT_OPTIONS,ADD_STUDENT,DELETE_STUDENT,PRINT_STUDENTS,DELETE_ALL_STUDENTS
+	PRINT_OPTIONS,ADD_STUDENT,DELETE_STUDENT,PRINT_STUDENTS,
+	DELETE_ALL_STUDENTS,GET_Nth_RECORD,GET_Nth_RECORD_FROM_END,
+	GET_MIDDLE_RECORD,NUM_OF_StUDENTS,REVERSE_RECORDS
 }eOptions_t;
-
-/*******************************************************************************
- *                                   Definition                                *
- *******************************************************************************/
-#define MINOPTION PRINT_OPTIONS
-#define MAXOPTION DELETE_ALL_STUDENTS
 
 /*******************************************************************************
  *                      Function Prototypes                                    *
@@ -52,11 +48,23 @@ void Delete_Student();
 void Print_Students();
 // Description: Function to delete all students in the list
 void Delete_allStudents();
+//Description: Function to find student by record number
+void Get_Nth_Record();
+//Description: Function to find n'th record from the end
+void Get_Nth_Record_FromEnd();
+//Description: Function to find the middle record
+void Get_Middle_Record();
+//Description: Function to count the number of students in the list
+void Num_Of_Students();
+//Description: Function to reverse records in the list
+void Reverse_Records();
 /*****************************************************************************/
 //Description: Function to fill data of student (name - id - height)
 void FillDataOfStudent(SData_t* newStudent);
 //Description: Function to search for student by its ID
 Sstudent_t* GetStuedentFromId(uint32 ID);
+
+
 
 
 #endif /* STUDENT_DATABASE_H_ */
