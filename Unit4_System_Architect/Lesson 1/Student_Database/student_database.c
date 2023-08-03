@@ -81,8 +81,8 @@ void Delete_Student(){
 				pPreviousStudents->PNextStudent=pDeleteStudent->PNextStudent;
 			}
 			//delete the required student
+			printf("delete student: %s , ID: %lu ------- Done\n",pDeleteStudent->student.name,pDeleteStudent->student.id);
 			free(pDeleteStudent);
-			printf("The deleted student ----- Done\n");
 			printf("========================================\n");
 		}
 	}
@@ -144,16 +144,17 @@ void Delete_allStudents(){
 void Print_Options(){
 	printf("===================================\n");
 	printf("\tChoose one of the following option\n");
+
 	printf(" 1: Add student\n");
 	printf(" 2: Delete student\n");
 	printf(" 3: Print students\n");
 	printf(" 4: Delete all students\n");
-	printf(" 5: Get Nth record\n");
-	printf(" 6: Get Nth record from the end\n");
-	printf(" 7: Get Middle record\n");
+	printf(" 5: Get Nth student\n");
+	printf(" 6: Get Nth student from the end\n");
+	printf(" 7: Get Middle student\n");
 	printf(" 8: Number of students\n");
-	printf(" 9: Reverse records\n");
-
+	printf(" 9: Reverse students\n");
+	printf(" 10: Exit\n");
 
 	printf("Enter Option Number: ");
 }
@@ -165,6 +166,8 @@ void Print_Options(){
  * Description: Function to fill data of student (name - id - height)
  ************************************************************************************/
 void FillDataOfStudent(SData_t* pNewStudent){
+	Sstudent_t* pStudent=g_pHeadofStudents;
+	boolean flag=TRUE;
 	//Get all information of student
 	printf("===== Enter information of student =====\n");
 	printf("Enter student full Name: ");
@@ -172,8 +175,24 @@ void FillDataOfStudent(SData_t* pNewStudent){
 	gets(pNewStudent->name);
 	printf("Enter student ID: ");
 	scanf("%lu",&(pNewStudent->id));
-	printf("Enter student height: ");
+	printf("Enter student height (cm): ");
 	scanf("%f",&(pNewStudent->height));
+	//check if another student have same id
+	while(flag){
+		pStudent=g_pHeadofStudents;
+		flag=FALSE;
+		while(pStudent){
+			if(pNewStudent->id == pStudent->student.id){
+				//if another student have same ID , get form user another ID
+				flag=TRUE; //For check the new entered ID agian
+				printf("There are  another student have same ID\nEnter Another ID: ");
+				scanf("%lu",&(pNewStudent->id));
+				break;
+			}
+			pStudent=pStudent->PNextStudent;
+		}
+	}
+	printf("Add student: %s ------- Done \n",pNewStudent->name);
 	printf("========================================\n");
 }
 
@@ -200,10 +219,10 @@ Sstudent_t* GetStuedentFromId(uint32 ID){
  * Function Name: Get_Nth_Record
  * Parameters (in):	None
  * Return value: None
- * Description: Function to find student by record number
+ * Description: Function to find n'th student in the list
  ************************************************************************************/
 
-void Get_Nth_Record(){
+void Get_Nth_Student(){
 	uint32 index;
 	Sstudent_t* pNthStudent=g_pHeadofStudents;
 	//Get the required record number
@@ -251,9 +270,9 @@ void Num_Of_Students(){
  * Function Name: Get_Nth_Record
  * Parameters (in):	None
  * Return value: None
- * Description: Function to find n'th record from the end
+ * Description: Function to find n'th student from the end
  ************************************************************************************/
-void Get_Nth_Record_FromEnd(){
+void Get_Nth_Student_From_TheEnd(){
 	uint32 index,num;
 	Sstudent_t* pMain=g_pHeadofStudents;
 	Sstudent_t* pRef=g_pHeadofStudents;
@@ -292,9 +311,9 @@ void Get_Nth_Record_FromEnd(){
  * Function Name: Get_Middle_Record
  * Parameters (in):	None
  * Return value: None
- * Description: Function to find the middle record
+ * Description: Function to find the middle student in the list
  ************************************************************************************/
-void Get_Middle_Record(){
+void Get_Middle_Student(){
 	Sstudent_t* pSlow=g_pHeadofStudents;
 	Sstudent_t* pFast=g_pHeadofStudents;
 	printf("\n============ Middle Student ============\n");
@@ -319,9 +338,9 @@ void Get_Middle_Record(){
  * Function Name: Reverse_Records
  * Parameters (in):	None
  * Return value: None
- * Description: Function to reverse records in the list
+ * Description: Function to reverse students in the list
  ************************************************************************************/
-void Reverse_Records(){
+void Reverse_Students(){
 	Sstudent_t* pCurrent=g_pHeadofStudents;
 	Sstudent_t* pNext=NULL;
 	Sstudent_t* pPrev=NULL;

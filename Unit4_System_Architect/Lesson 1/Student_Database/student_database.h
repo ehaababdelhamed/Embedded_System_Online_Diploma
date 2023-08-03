@@ -29,8 +29,8 @@ typedef struct Sstudent Sstudent_t;
 
 typedef enum {
 	PRINT_OPTIONS,ADD_STUDENT,DELETE_STUDENT,PRINT_STUDENTS,
-	DELETE_ALL_STUDENTS,GET_Nth_RECORD,GET_Nth_RECORD_FROM_END,
-	GET_MIDDLE_RECORD,NUM_OF_StUDENTS,REVERSE_RECORDS
+	DELETE_ALL_STUDENTS,GET_Nth_Student,GET_Nth_Student_FROM_THEEND,
+	GET_MIDDLE_STUDENT,NUM_OF_StUDENTS,REVERSE_STUDENTS,EXIT
 }eOptions_t;
 
 /*******************************************************************************
@@ -49,15 +49,15 @@ void Print_Students();
 // Description: Function to delete all students in the list
 void Delete_allStudents();
 //Description: Function to find student by record number
-void Get_Nth_Record();
+void Get_Nth_Student();
 //Description: Function to find n'th record from the end
-void Get_Nth_Record_FromEnd();
+void Get_Nth_Student_From_TheEnd();
 //Description: Function to find the middle record
-void Get_Middle_Record();
+void Get_Middle_Student();
 //Description: Function to count the number of students in the list
 void Num_Of_Students();
 //Description: Function to reverse records in the list
-void Reverse_Records();
+void Reverse_Students();
 /*****************************************************************************/
 //Description: Function to fill data of student (name - id - height)
 void FillDataOfStudent(SData_t* newStudent);

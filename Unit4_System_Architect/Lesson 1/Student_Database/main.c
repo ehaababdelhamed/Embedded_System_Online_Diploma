@@ -35,29 +35,36 @@ int main(void){
 			Delete_allStudents();
 			option=PRINT_OPTIONS;
 			break;
-		case GET_Nth_RECORD:
-			Get_Nth_Record();
+		case GET_Nth_Student:
+			Get_Nth_Student();
 			option=PRINT_OPTIONS;
 			break;
-		case GET_Nth_RECORD_FROM_END:
-			Get_Nth_Record_FromEnd();
+		case GET_Nth_Student_FROM_THEEND:
+			Get_Nth_Student_From_TheEnd();
 			option=PRINT_OPTIONS;
 			break;
-		case GET_MIDDLE_RECORD:
-			Get_Middle_Record();
+		case GET_MIDDLE_STUDENT:
+			Get_Middle_Student();
 			option=PRINT_OPTIONS;
 			break;
 		case NUM_OF_StUDENTS:
 			Num_Of_Students();
 			option=PRINT_OPTIONS;
 			break;
-		case REVERSE_RECORDS:
-			Reverse_Records();
+		case REVERSE_STUDENTS:
+			Reverse_Students();
 			option=PRINT_OPTIONS;
+			break;
+		case EXIT:
 			break;
 		default:
 			printf("WRONG OPTION!\n");
 			option=PRINT_OPTIONS;
+		}
+		//Finish the program;
+		if(option==EXIT){
+			printf("\n--------------- End the program ---------------\n");
+			break;
 		}
 	}
 	return 0;
