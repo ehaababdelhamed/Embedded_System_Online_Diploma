@@ -17,7 +17,7 @@
 
 ### Second Term ![image](https://img.shields.io/badge/In_Progress-green)
 
-- Unit 6: MCU Fundamentals
+- Unit 6: MCU Fundamentals :white_check_mark: 
 - Unit 7: MCU Essential Peripherals
 - Unit 8: MCU Interfacing
 - Unit 9: MCU Timers/ADC
