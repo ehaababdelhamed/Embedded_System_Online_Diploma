@@ -1,9 +1,0 @@
-lcd.c:31:6:LCD_init	16	static
-lcd.c:78:6:LCD_sendCommand	16	static
-lcd.c:116:6:LCD_displayCharacter	16	static
-lcd.c:154:6:LCD_displayString	24	static
-lcd.c:182:6:LCD_displayNumber	32	static
-lcd.c:194:6:LCD_cleanScreen	8	static
-lcd.c:205:6:LCD_goToSpecficPosition	24	static
-lcd.c:251:6:LCD_customCharacter	16	static
-lcd.c:273:13:LCD_enablePulse	8	static
