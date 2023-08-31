@@ -1,9 +1,0 @@
-gpio.c:36:6:MCAL_GPIO_init	32	static
-gpio.c:95:6:MCAL_GPIO_deInit	16	static
-gpio.c:129:7:MCAL_GPIO_readPin	24	static
-gpio.c:156:8:MCAL_GPIO_readPort	24	static
-gpio.c:180:6:MCAL_GPIO_writePin	24	static
-gpio.c:215:6:MCAL_GPIO_writePort	24	static
-gpio.c:236:6:MCAL_GPIO_togglePin	24	static
-gpio.c:258:9:MCAL_GPIO_lockPin	32	static
-gpio.c:301:22:GPIO_GetPortAdd	24	static
