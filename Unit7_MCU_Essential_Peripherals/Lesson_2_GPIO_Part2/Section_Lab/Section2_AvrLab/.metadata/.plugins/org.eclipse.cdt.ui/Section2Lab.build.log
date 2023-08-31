@@ -1,0 +1,20 @@
+??:??:?? **** Incremental Build of configuration Debug for project Section2Lab ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Section2Lab.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7956 bytes (24.3% Full)
+(.text + .data + .bootloader)
+
+Data:         58 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+??:??:?? Build Finished. 0 errors, 0 warnings. (took 280ms)
+
