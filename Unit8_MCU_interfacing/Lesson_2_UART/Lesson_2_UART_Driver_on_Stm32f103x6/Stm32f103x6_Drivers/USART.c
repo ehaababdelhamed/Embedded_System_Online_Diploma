@@ -1,7 +1,7 @@
 /******************************************************************************
- * Module: GPIO
- * File Name: gpio.c
- * Description: Source file for GPIO driver for Stm32f103x6
+ * Module: USART
+ * File Name: USART.c
+ * Description: Source file for USART driver for Stm32f103x6
  * Author: Ehab Mohamed Abdelhamed
  ******************************************************************************/
 
@@ -12,18 +12,33 @@
 #include "USART.h"
 #include "RCC.h"
 #include "GPIO.h"
-#include <math.h>
 
 /*******************************************************************************
  *                            			Global Variables	                   				*
  *******************************************************************************/
 static void (*GP__callBackFunc[NUM_OF_UART_IRQ])(void)={NULL,NULL,NULL};
+static USART_TypeDef *USART_instance[NUM_OF_UART_INSTANCES]= {USART1,USART2,USART3};
+static USART_Config_t *Global_USART_Config[NUM_OF_UART_INSTANCES]={NULL,NULL,NULL};
 
-/*******************************************************************************
- *                            			Macros	                   				*
- *******************************************************************************/
-USART_TypeDef *USART_instance[NUM_OF_UART_INSTANCES]= {USART1,USART2,USART3};
-USART_Config_t *Global_USART_Config[NUM_OF_UART_INSTANCES]={NULL,NULL,NULL};
+/* USART1 :				USART2 :			USART3 :
+ * PA9  >> TX			PA2 >> TX			PB10  >> TX
+ * PA10 >> RX			PA3 >> RX			PB11 >> RX
+ * PA11 >> CTS			PA0 >> CTS			PB13 >> CTS
+ * PA12 >> RTS			PA1 >> RTS			PB14 >> RTS
+ * */
+//USART GPIO PORT
+static uint8 USARTxPORT[NUM_OF_UART_INSTANCES]={
+		GPIO_PORTA,
+		GPIO_PORTA,
+		GPIO_PORTB
+};
+//USART GPIO Pins
+//{ TX_PIN , RX,PIN , CTS_PIN , RTS_PIN}
+static uint8 USARTxPINS[NUM_OF_UART_INSTANCES][4]={
+		{GPIO_PIN_9,GPIO_PIN_10,GPIO_PIN_11,GPIO_PIN_12},
+		{GPIO_PIN_2,GPIO_PIN_3,GPIO_PIN_0,GPIO_PIN_1},
+		{GPIO_PIN_10,GPIO_PIN_11,GPIO_PIN_13,GPIO_PIN_14}
+};
 
 /*******************************************************************************
  *                            	Function Definition	                   			*
@@ -255,38 +270,6 @@ void MCAL_USART_WAIT_TC(USART_Instance_e USARTx_ID){
  * Return value		: Character to be received
  * Note				: None
  ************************************************************************************/
-/* USART1 :
- * PA9  >> TX
- * PA10 >> RX
- * PA11 >> CTS
- * PA12 >> RTS
- * */
-/* USART2 :
- * PA2 >> TX
- * PA3 >> RX
- * PA0 >> CTS
- * PA1 >> RTS
- * */
-/* USART3 :
- * PB10  >> TX
- * PB11 >> RX
- * PB13 >> CTS
- * PB14 >> RTS
- * */
-//========================================================================================================
-//USART GPIO PINS
-//{ TX_PIN , RX,PIN , CTS_PIN , RTS_PIN}
-static uint8 USARTxPORT[NUM_OF_UART_INSTANCES]={
-		GPIO_PORTA,
-		GPIO_PORTA,
-		GPIO_PORTB
-};
-static uint8 USARTxPINS[NUM_OF_UART_INSTANCES][4]={
-		{GPIO_PIN_9,GPIO_PIN_10,GPIO_PIN_11,GPIO_PIN_12},
-		{GPIO_PIN_2,GPIO_PIN_3,GPIO_PIN_0,GPIO_PIN_1},
-		{GPIO_PIN_10,GPIO_PIN_11,GPIO_PIN_13,GPIO_PIN_14}
-};
-//========================================================================================================
 void MCAL_USART_GPIO_SET_PINS(USART_Instance_e USARTx_ID){
 	USART_TypeDef * USARTx;
 	boolean error = FALSE;
@@ -318,7 +301,7 @@ void MCAL_USART_GPIO_SET_PINS(USART_Instance_e USARTx_ID){
 		}
 	}
 }
-//==========================================================================================================
+//===================================================================================================
 
 /*******************************************************************************
  *                            			ISR	  		                 			*
@@ -339,4 +322,6 @@ void USART3_IRQHandler()         			/* USART3 global interrupt*/
 {
 	if(GP__callBackFunc != NULL){
 		(*GP__callBackFunc[USART3_ID])();
-	}}
+	}
+}
+//==================================================================================================
